@@ -1,5 +1,7 @@
-# Getting Started with Create React App
 
+
+# Getting Started with Create React App
+# to connect with fake backend:  `npx json-server --watch src/data/db.json --port 8000`
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
