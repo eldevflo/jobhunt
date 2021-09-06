@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', serif ;
+
+}
+
+main {
+  min-height: 80vh;
+}
+img{
+  vertical-align: middle;
+  border-style: none;
+}
+a{
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}

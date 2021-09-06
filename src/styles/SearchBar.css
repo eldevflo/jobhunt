@@ -1,0 +1,40 @@
+
+
+.search-sec{
+    padding-top: 15rem;
+}
+
+
+.job-field{
+    width: 40rem;
+    
+}
+
+.city-field {
+    
+    width: 12rem;
+    height: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    /* hide the arrow */
+    -webkit-appearance: none;
+    padding-left: 1rem;
+    outline: none;
+}
+
+.search-btn{
+    height: 3rem;
+    background-color: #fb236a;
+    outline: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 690px){
+    .job-field  , .search-btn{
+        width: 100%;
+ 
+    }
+    .search-sec{
+        padding-top:10rem;
+    }
+}

@@ -1,0 +1,26 @@
+.categories{
+    padding-top: 10%;
+    z-index: 10;
+    text-align: center;
+}
+.category i{
+    font-size: 3rem;
+    color: #8b91dd;
+}
+.category-item:hover  i{
+    color:#fb236a
+}
+
+.category-item:hover{
+    box-shadow: 5px 5px 5px  5px rgba(177, 177, 177, 0.418)
+}
+.cat-title{
+    margin-top: 50%;
+}
+
+@media screen and (min-width:1400px){
+    .cat-title{
+        margin-top: 60%;
+    }
+}
+

@@ -1,0 +1,5 @@
+.blog-content::first-letter {
+  font-weight: bold;
+  color:crimson;
+  font-size: 1.5rem
+}

@@ -1,0 +1,35 @@
+.banner {
+    position: relative;
+     justify-content:center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+.banner img{
+    width: 100vw;
+    height: 15rem;
+    object-fit: cover;
+    z-index: -1;
+    
+
+}
+.image-overlay{
+    width: fit-content;
+    background: rgba(41, 76, 190, 0.651);
+    z-index: 1;
+}
+.banner-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50% );
+}
+.sign-upbtn{
+    color: #fff;
+   
+}
+.sign-upbtn:hover{
+    background-color: #fff;
+    color: #fb236a;
+
+}
