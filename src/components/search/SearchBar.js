@@ -10,17 +10,13 @@ function SearchBar({history}) {
         {value:'Qom' , label:'Qom'},
         {value:'Mashhad' , label:'Mashhad'},
         {value:'Shiraz' , label:'Shiraz'},
-         ]
+        ]
 
-         const [searchTerm , setSearchTerm] = useState('');
-                         
-
-
-          const handleSearch = (e) =>{
+        const [searchTerm , setSearchTerm] = useState('');
+        const handleSearch = (e) =>{
               e.preventDefault();
-
             history.push(`/results${searchTerm}`);
-          }
+        }
     return (
         <div  className=" container search-sec">
             <h1 className="text-center text-white font-bold lg:text-3xl ">The Easiest Way to Get Your New Job</h1>
@@ -34,10 +30,10 @@ function SearchBar({history}) {
                             className="form-control job-field lg:col-span-9 h-12 px-3 outline-none" 
                             placeholder="job title, keywords or company name"
                             />
-                            <select  className='city-field lg:col-span-3  h-12  '>
+                            <select onChange={e=>setSearchTerm(e.target.value || 'tehran')}   className='city-field lg:col-span-3  h-12  '>
                             { cities?.map((c) => <option key={c.value} value={c.value}>{c.label}</option>)}
                             </select>
-                            <Link to={'results' + "/" + searchTerm} >  
+                            <Link to={'results' + "/" +( searchTerm || 'Tehran')} >  
                             <button
                                 className="btn search-btn border-0 lg:col-span-3">
                                 <i className="fa fa-search mx-1"></i>

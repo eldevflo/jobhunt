@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
-import { Element } from 'react-scroll'
-import Button from '../UI/Button'
 import { JobListAction } from '../state/actions/JobAction'
 import MainNavbar from '../components/navbar/MainNavbar'
+import { Element } from 'react-scroll'
 
 function JobsPage() {
 
@@ -14,12 +12,6 @@ function JobsPage() {
   useEffect(() => {
     dispatch(JobListAction())
   }, [dispatch])
-
-
-
-
-
-
     return (
       <Element name="jobs">
       <MainNavbar/>

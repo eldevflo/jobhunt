@@ -52,6 +52,7 @@ function NavBar({fixed}) {
               "lg:flex flex-grow items-center" +
               (navbarOpen ? " flex bg-current rounded " : " hidden")
             }
+            style={{height: navbarOpen ? '100vh' : ''}}
             id="example-navbar-danger"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto   ">
