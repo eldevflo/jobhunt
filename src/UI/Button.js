@@ -2,7 +2,7 @@
 function Button(props) {
     return (
         <div>
-            <button className=" my-4 outline-none border-1 p-2 text-current  rounded-lg  border-current  focus:outline-none">{props.text}</button>      
+            <button className=" my-4 outline-none border-1 p-2 text-current  rounded-lg  border-current  focus:outline-none" onClick={props.onClick}>{props.text}</button>      
         </div>
     )
 }
